@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 通知栏小图标：单色布偶剪影 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- 左耳 -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M8,10 C7.5,6 9.5,4 11,4.5 L10.6,8 Z" />
+    <!-- 右耳 -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M16,10 C16.5,6 14.5,4 13,4.5 L13.4,8 Z" />
+    <!-- 头 -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M12,7 a5.4,5.4 0 1,0 0.001,0 Z" />
+    <!-- 眼睛左 -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M10,11.5 a0.9,0.9 0 1,0 0.001,0 Z" />
+    <!-- 眼睛右 -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M14,11.5 a0.9,0.9 0 1,0 0.001,0 Z" />
+</vector>

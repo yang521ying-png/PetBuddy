@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">悬浮小布偶</string>
+    <string name="start_service">开启悬浮布偶</string>
+    <string name="stop_service">关闭悬浮布偶</string>
+    <string name="permission_needed">需要悬浮窗权限</string>
+    <string name="permission_hint">悬浮布偶需要悬浮窗权限才能显示在其他应用上层，请点击下方按钮前往系统设置开启。</string>
+    <string name="grant_permission">去开启悬浮窗权限</string>
+    <string name="notification_channel_name">布偶陪伴服务</string>
+    <string name="notification_title">小布偶正在陪你</string>
+    <string name="notification_action_feed">投喂</string>
+    <string name="notification_action_stop">关闭</string>
+    <string name="service_running">悬浮布偶运行中</string>
+    <string name="tips_click">单击布偶：摸摸它 · 双击：打开操作面板 · 长按拖动：随意摆放</string>
+    <string name="status_happiness">心情</string>
+    <string name="status_fullness">饱腹</string>
+</resources>

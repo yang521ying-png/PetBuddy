@@ -63,11 +63,12 @@ object PetAnimations {
         if (view.tag == TAG_FLOAT_LOOP) return
         view.tag = TAG_FLOAT_LOOP
         val d = view.resources.displayMetrics.density
-        val up = ObjectAnimator.ofFloat(view, View.TRANSLATION_Y, 0f, -6f * d).setDuration(900)
-        val down = ObjectAnimator.ofFloat(view, View.TRANSLATION_Y, -6f * d, 0f).setDuration(900)
-        val seq = AnimatorSet().apply { playSequentially(up, down) }
-        seq.repeatCount = ObjectAnimator.INFINITE
-        seq.start()
+        ObjectAnimator.ofFloat(view, View.TRANSLATION_Y, 0f, -6f * d).apply {
+            duration = 900
+            repeatMode = ObjectAnimator.REVERSE
+            repeatCount = ObjectAnimator.INFINITE
+            start()
+        }
     }
 
     /** 停止浮空循环并复位 */

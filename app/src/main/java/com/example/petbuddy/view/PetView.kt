@@ -41,7 +41,6 @@ class PetView(
     private var dragging = false
 
     private val mainHandler = Handler(Looper.getMainLooper())
-    private val hideBubbleRunnable = Runnable { bubble.visibility = GONE }
 
     private val gestureDetector = GestureDetector(
         context,
@@ -81,6 +80,8 @@ class PetView(
         addView(imageView)
         addView(bubble)
     }
+
+    private val hideBubbleRunnable = Runnable { bubble.visibility = GONE }
 
     @SuppressLint("ClickableViewAccessibility")
     override fun onTouchEvent(event: MotionEvent): Boolean {

@@ -131,9 +131,11 @@ class PetFloatingService : Service() {
                 params?.let { lp ->
                     lp.x = startX + dx.roundToInt()
                     lp.y = startY + dy.roundToInt()
-                    try {
-                        windowManager.updateViewLayout(view, lp)
-                    } catch (_: Exception) {
+                    petView?.let { v ->
+                        try {
+                            windowManager.updateViewLayout(v, lp)
+                        } catch (_: Exception) {
+                        }
                     }
                 }
             },

@@ -18,8 +18,12 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-      - name: 配置 Android SDK
-        uses: android-actions/setup-android@v3
+      - name: 接受 Android SDK 许可证
+        run: |
+          SDKMANAGER=$(find /usr/local/lib/android/sdk/cmdline-tools -name sdkmanager 2>/dev/null | head -1)
+          echo "sdkmanager: ${SDKMANAGER}"
+          yes | "${SDKMANAGER}" --licenses > /dev/null 2>&1 || true
+          echo "license 处理完成"
 
       - name: 配置 Gradle
         uses: gradle/actions/setup-gradle@v4
